@@ -25,7 +25,7 @@ public class Hospital {
     numeroEnfermeros: 200
     
     */
-     public Hospital() {
+    public Hospital() {
         nombre = "Isidro Ayora";
         ciudad = "Loja";
         numeroDoctores = 100;
