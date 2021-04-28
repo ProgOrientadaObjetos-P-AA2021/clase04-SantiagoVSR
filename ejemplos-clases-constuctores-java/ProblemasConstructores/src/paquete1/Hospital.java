@@ -25,6 +25,13 @@ public class Hospital {
     numeroEnfermeros: 200
     
     */
+     public Hospital() {
+        nombre = "Isidro Ayora";
+        ciudad = "Loja";
+        numeroDoctores = 100;
+        numeroEnfermeros = 200;
+
+    }
     
     public void establecerNombre(String n){
         nombre = n;
@@ -58,4 +65,16 @@ public class Hospital {
         return numeroEnfermeros;
     }
     
+    @Override
+    public String toString() {
+        String hospi = String.format("El hospital: %s\n"
+                + "El cual se encuentra en la ciudad: %s\n"
+                + "Con un total de %s doctores\n"
+                + "y un aproximado de %s enfermeros\n",
+                obtenerNombre(),
+                obtenerCiudad(),
+                obtenerNumeroDoctores(),
+                obtenerNumeroEnfermeros());
+        return hospi;
+    }
 }

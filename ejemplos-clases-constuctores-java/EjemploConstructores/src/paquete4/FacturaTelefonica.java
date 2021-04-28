@@ -19,6 +19,10 @@ public class FacturaTelefonica {
         
     }
 
+    FacturaTelefonica() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public void establecerNumeroTelefono(String c) {
         numeroTelefono = c;
     }
